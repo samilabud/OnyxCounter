@@ -7,6 +7,7 @@ import ONYXKEYS from './src/ONYXKEYS';
 
 import StateCounter from './src/components/StateCounter';
 import OnyxCounter from './src/components/OnyxCounter';
+import OnyxFoods from './src/components/OnyxFoods';
 import OnyxExamples from './src/components/OnyxExamples';
 import OnyxPropertySelectors from './src/components/OnyxPropertySelectors';
 import OnyxRelationships from './src/components/OnyxRelationships';
@@ -24,6 +25,8 @@ const App = () => {
                 <Text style={style.h3}>State vs. Onyx</Text>
                 <StateCounter />
                 <OnyxCounter />
+                <View style={style.hr} />
+                <OnyxFoods />
                 <View style={style.hr} />
                 <OnyxExamples />
                 <View style={style.hr} />

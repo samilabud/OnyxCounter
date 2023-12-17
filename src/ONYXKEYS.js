@@ -8,6 +8,9 @@ export default {
     // General information about a vehicle
     VEHICLE: 'vehicle',
 
+    // Onyx key that stores an array of food names
+    FOODS: 'foods',
+
     // Onyx collections
     COLLECTION: {
         // Onyx collection that stores both cat and dog facts
