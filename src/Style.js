@@ -29,4 +29,12 @@ export default StyleSheet.create({
         marginTop: 12,
         marginBottom: 12,
     },
+    center: {
+        flex: 1,
+        alignItems: 'center',
+        flexWrap: 'nowrap',
+        flexDirection: 'row',
+        margin: 10,
+    },
+    input: {borderWidth: 1, width: 180, height: 40},
 });

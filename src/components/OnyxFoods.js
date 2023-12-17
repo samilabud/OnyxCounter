@@ -12,7 +12,14 @@ const OnyxFoods = ({foods = []}) => {
     return (
         <View>
             <Text style={style.text}>Onyx foods: {JSON.stringify(foods)}</Text>
-            <TextInput onChangeText={handleTextChange} value={foodName} />
+            <View style={style.center}>
+                <Text style={style.text}>Type your favorite food: </Text>
+                <TextInput
+                    onChangeText={handleTextChange}
+                    value={foodName}
+                    style={style.input}
+                />
+            </View>
             <TouchableOpacity
                 style={style.button}
                 onPress={() => {
@@ -20,6 +27,13 @@ const OnyxFoods = ({foods = []}) => {
                     setFootName('');
                 }}>
                 <Text>Add One Food!</Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+                style={style.button}
+                onPress={() => {
+                    Onyx.set(ONYXKEYS.FOODS, []);
+                }}>
+                <Text>Clear foods!</Text>
             </TouchableOpacity>
         </View>
     );
